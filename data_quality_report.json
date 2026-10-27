@@ -1,0 +1,35 @@
+{
+  "source_file": "master_combined_counts.csv",
+  "source_rows": 600,
+  "columns": 16,
+  "distinct_sitrep_sources": 24,
+  "count_types": {
+    "Cumules": 418,
+    "Nouveaux": 182
+  },
+  "aggregate_rows": 134,
+  "nonaggregate_rows": 466,
+  "start_date_missing_rows": 441,
+  "end_date_missing_rows": 0,
+  "confirmed_case_missing_rows": 2,
+  "zone_missing_rows": 103,
+  "province_missing_rows": 41,
+  "contacts_missing_rows": 439,
+  "date_range_end_date": [
+    "2026-05-12",
+    "2026-06-08"
+  ],
+  "geojson_total_features": 220,
+  "geojson_district_features": 197,
+  "geojson_regions": 10,
+  "geojson_region_city_groups": 12,
+  "geojson_null_geometries": 0,
+  "critical_caveats": [
+    "Counts mix cumulative ('Cumules') and new ('Nouveaux') observations; do not sum these together.",
+    "Both aggregate and location-level rows exist; do not add them together.",
+    "Many start dates and values are missing; missing is not zero.",
+    "Rows do not identify virus species in a dedicated field; verify against original reports before species-specific analysis.",
+    "DRC outbreak counts must not be mapped onto Cameroon districts or interpreted as Cameroon cases.",
+    "Geography includes 197 district features but needs validation against current official Cameroon health district boundaries."
+  ]
+}
